@@ -1,0 +1,12 @@
+[submodule "MikumariSecnd-Ex_NetWavetizer-40.srcs/sources_1/hdl/mikumari"]
+	path = MikumariSecnd-Ex_NetWavetizer-40.srcs/sources_1/hdl/mikumari
+	url = https://github.com/RyotaroHonda/mikumari.git
+[submodule "MikumariSecnd-Ex_NetWavetizer-40.srcs/sources_1/hdl/bbt-sitcp-core_artix7"]
+	path = MikumariSecnd-Ex_NetWavetizer-40.srcs/sources_1/hdl/bbt-sitcp-core_artix7
+	url = https://github.com/BeeBeansTechnologies/SiTCP_Netlist_for_Artix7.git
+[submodule "hdl/mikumari"]
+	path = hdl/mikumari
+	url = https://github.com/RyotaroHonda/mikumari.git
+[submodule "hdl/bbt-sitcp-core_artix7"]
+	path = hdl/bbt-sitcp-core_artix7
+	url = https://github.com/BeeBeansTechnologies/SiTCP_Netlist_for_Artix7.git
