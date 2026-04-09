@@ -24,7 +24,7 @@
 #    (Please see the '$orig_proj_dir' and '$origin_dir' variable setting below at the start of the script)
 #
 #    "/home/mizoguchi/FW_Develop/MikumariSecnd-Ex_NetWavetizer-40/build/temp_constraints/debug.xdc"
-#    "/home/mizoguchi/FW_Develop/MikumariSecnd-Ex_NetWavetizer-40/build/MikumariSecnd-Ex.srcs/utils_1/imports/synth_1/toplevel.dcp"
+#    "/home/mizoguchi/FW_Develop/MikumariSecnd-Ex_NetWavetizer-40/build/utils_1/imports/synth_1/toplevel.dcp"
 #
 # 3. The following remote source files that were added to the original project:-
 #
@@ -123,7 +123,7 @@ proc checkRequiredFiles { origin_dir} {
   set status true
   set files [list \
  "[file normalize "$origin_dir/temp_constraints/debug.xdc"]"\
- "[file normalize "$origin_dir/MikumariSecnd-Ex.srcs/utils_1/imports/synth_1/toplevel.dcp"]"\
+ "[file normalize "$origin_dir/utils_1/imports/synth_1/toplevel.dcp"]"\
   ]
   foreach ifile $files {
     if { ![file isfile $ifile] } {
@@ -1149,7 +1149,7 @@ set_property -name "top_lib" -value "mylib" -objects $obj
 set obj [get_filesets utils_1]
 # Import local files from the original project
 set files [list \
- [file normalize "${origin_dir}/MikumariSecnd-Ex.srcs/utils_1/imports/synth_1/toplevel.dcp" ]\
+ [file normalize "${origin_dir}/utils_1/imports/synth_1/toplevel.dcp" ]\
 ]
 set imported_files [import_files -fileset utils_1 $files]
 
@@ -1193,7 +1193,7 @@ if { $obj != "" } {
 }
 set obj [get_runs synth_1]
 set_property -name "part" -value "xc7a100tfgg484-1" -objects $obj
-#set_property -name "incremental_checkpoint" -value "$proj_dir/MikumariSecnd-Ex.srcs/utils_1/imports/synth_1/toplevel.dcp" -objects $obj
+#set_property -name "incremental_checkpoint" -value "$proj_dir/utils_1/imports/synth_1/toplevel.dcp" -objects $obj
 set_property -name "incremental_checkpoint" -value "$origin_dir/utils_1/imports/synth_1/toplevel.dcp" -objects $obj
 set_property -name "auto_incremental_checkpoint" -value "1" -objects $obj
 set_property -name "strategy" -value "Vivado Synthesis Defaults" -objects $obj
